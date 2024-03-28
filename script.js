@@ -3,13 +3,13 @@ const questions = [
         {
             "question" : "Star Wars (1977)",
             "choices" : ["To infinity and beyond!", "I'm king of the world!", "May the Force be with you.","There's no crying in baseball!"],
-            "correctAnswer" : 0,
+            "correctAnswer" : 2,
             "points" : 100
         },
         
         {
             "question" : "The Terminator (1984)",
-            "choices" : ["Go ahead, make my day.", "'ll be back", "Why so serious?", "Nobody puts Baby in a corner."],
+            "choices" : ["Go ahead, make my day.", "I'll be back", "Why so serious?", "Nobody puts Baby in a corner."],
             "correctAnswer" : 1,
             "points" : 200
         },
@@ -90,28 +90,28 @@ const questions = [
     ],
     [ 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
+            "question" : "Back to the Future release date?",
+            "choices" : ["1980", "1985", "2000", "1968"],
+            "correctAnswer" : 1,
             "points" : 100
         },
 
         {
-            "question" : "Parasite",
+            "question" : "Parasite release date?",
             "choices" : ["2019", "2015", "2023", "2021"],
             "correctAnswer" : 0,
             "points" : 200
         },
 
         {
-            "question" : "Jaws",
+            "question" : "Jaws release date?",
             "choices" : ["1970", "1975", "1990", "2011"],
             "correctAnswer" : 1,
             "points" : 300
         },
 
         {
-            "question" : "La La Land",
+            "question" : "La La land release date?",
             "choices" : ["2014", "2021", "2016", "2002"],
             "correctAnswer" : 2,
             "points" : 400
@@ -122,7 +122,7 @@ const questions = [
 
 function OnClick (element) {
     if (element.getAttribute("data-clicked") === "true") {
-        return
+        return;
     }
 
     document.getElementById("overlay").style.display = "block";
@@ -140,7 +140,26 @@ function OnClick (element) {
     document.getElementById("overlay").innerHTML = `<h2> Question : ${object.question}</h2> ${options}`;
     
     element.setAttribute("data-clicked", true);
+    startTimer(5);
 }
+
+// Timer function, the question dissappears after 5 seconds
+function startTimer(duration) {
+    let timer = duration;
+    const countdownTimer = setInterval(() => {
+        timer--;
+        if (timer < 0) {
+            clearInterval(countdownTimer);
+            hideQuestion();
+        }
+    }, 1000); 
+}
+
+//hide the question
+function hideQuestion() {
+    document.getElementById("overlay").style.display = "none";
+}
+
 
 // Cette fonction est celle qui gere ce qui ce passe lorsqu'on click sur une des cellules.
 // Elle couvre la page avec un div puis affiche la question correspondante et les reponses possible. 
@@ -148,21 +167,24 @@ function OnClick (element) {
 
 
 
-function OptionClicked (element) {
+function OptionClicked(element) {
     if (element.getAttribute("data-clicked") === "true") {
-        return
+        return;
     }
 
     element.setAttribute("data-clicked", true);
 
     if (element.getAttribute("data-correct") == "false") {
         element.style.color = '#ff0000';
-        return
+        return;
     }
 
-    document.getElementById("overlay").innerHTML = "";
-    document.getElementById("overlay").style.display = "none"; 
+    // Correct answer clicked
+    document.getElementById("overlay").innerHTML = "<h2>Correct Answer!</h2>"; // Display message
 
+    setTimeout(() => {
+        document.getElementById("overlay").style.display = "none";
+    }, 2000); 
 }
 
 // Cette fonction gere lorsqu'une reponse est clickee.
@@ -186,4 +208,4 @@ for (let columnIndex = 0; columnIndex < 4; columnIndex++) {
 // Assuming you have a table element with id="myTable"
 document.getElementById("questions place").innerHTML += tableHTML;
 
-// Cette boucle "for" cree le tableau qui liste les points de toutes les questions dans les categories
+// Cette boucle "for" cree le tableau qui liste les points de toutes les questions dans les cate
