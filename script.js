@@ -24,7 +24,7 @@ const questions = [
             {
                 "question" : "Titanic (1997)",
                 "choices" : ["It's alive! It's alive!", "You talking to me?", "I'm the king of the world!", "I feel the need—the need for speed!"],
-                "correctAnswer" : 1,
+                "correctAnswer" : 2,
                 "points" : 400
             },
 
