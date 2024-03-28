@@ -170,17 +170,6 @@ function OptionClicked (element) {
 // Sinon, elle change la couleur de la reponse clickee au rouge
 
 
-
-// for (let index = 1; index <= 4; index++) {
-//     let string = "";
-//     let i = 0;
-//     questions[index - 1].forEach(element => {
-//         string += `<td data-first=${index} data-second=${i} data-clicked=false onClick="OnClick(this)"> ${element.points} </td>`;
-//         i += 1; 
-//     });
-//     document.getElementById(`${index}`).innerHTML = string;
-// }
-
 const numRows = questions.length;
 const numColumns = questions[0].length;
 
