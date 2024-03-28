@@ -1,163 +1,77 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
     <head>
-
-        <meta charset="UTF-8">
-
+        <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Jepoardy Welcome page</title>
-
         <link rel="stylesheet" href="styles.css" />
-
     </head>
-
     <body>
-
         <p class="avgsmalltext">Watch M-F 7:00pm  on Nanalan-TV</p>
-
         <h1>CAVpardy</h1>
-
     <hr>
-
     <section>
-
         <h2 class="title">Meet the team:</h2>
 
- 
-
         <m1>
-
             <person class="members">
-
                 <p class="names">Lionel</p>
-
-                <p class="description">tsajkjkka james <br>charles fan
-
-                    djdjdjdj
-
+                <p class="description">james <br>charles fan
                 </p>
-
-                <div class="divv"></div>
-
-            </person>
-
+            </person> 
         </m1>
 
- 
-
         <m2>
-
             <person class="members">
-
                 <p class="names">Manel</p>
-
-                <p class="description">multitalented <br>legend</p>
-
-                <div class="divv"></div>
-
-            </person>
-
+                <p class="description">multitalented <br>legend</p> 
+            </person> 
         </m2>
 
- 
-
         <m3>
-
             <person class="members">
-
                 <p class="names">Robert</p>
-
                 <p class="description">Nsjsjskkksjsj<br>shsjajsj</p>
-
-                <div class="divv"></div>
-
-            </person>
-
+            </person> 
         </m3>  
 
- 
-
         <hr style ="margin-top:20px;">
-
     </section>
 
- 
 
     <section>
-
-        <h3 class="title">Da rules: </h3>
-
+        <h3 class="title">Les règles : </h3>
         <ol>
-
-            <li><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-            <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
-
-            when an unknown printer took a galley of type and scrambled it to make a type specimen<br>
-
-             It has survived not only five centuries, but also the leap into electronic typesetting, remaining<br>
-
-              Lorem Ipsum passages, and more recently with desktop publish</p></li>
-
- 
-
-            <li><p>is a long established fact that a reader will be distracted by the readable content of <br>
-
-                a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less<br>
-
-                normal distribution of letters, as opposed to using 'Content here, content here', making it look like <br>
-
-                readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default<br>
-
-                 model text, and a search for 'lorem ipsum' will uncover</p></li>
+            <li><p> Il y aura 4 options de catégories : citations de films populaires, acteurs de films populaires, nom de films,<br>
+                 titres de films, et leur année d’apparition. Lorsque l’utilisateur choisit une catégorie pour le joueur,  <br>
+                il a le choix entre 4 questions, variant de très facile à très difficile.Si le joueur répond correctement à la question,<br>
+                il peut s'entrainer sur une autre question, sinon, il continue jusqu'a ce qu'il obtient la réponse correcte. Le joueur a 5secondes <br>
+                pour répondre, avant que la question disparait. C'est un jeu d'entrainement permettant au joueur d'étudier et d'apprendre d'avantage<br>
+                d'anecdotes sur le monde du cinéma. 
+                  </p></li>
 
         </ol>
-
         <hr>
-
     </section>
-
     <section>
-
         <h4 class="title">Set up your party!</h4>
-
         <p>Please fill out this form with the required information</p>
-
-        <form method="post" action=''>
-
-          <!-- <fieldset>
-
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required /></label>
-
-            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required /></label>
-
-          </fieldset> -->
-
-          <!-- too bad i'm not using this shit -->
- 
-
-          <!-- <legend>Number of players ? </legend>
-
-        <label for="personal-account"><input id="personal-account" type="radio" name="playernumb" class="inline" checked />2</label>
-
-        <label for="business-account"><input id="business-account" type="radio" name="playernumb" class="inline" />3</label>
-
-        <label for="business-account"><input id="business-account" type="radio" name="playernumb" class="inline" />4</label> -->
-
- 
-
-          <input type="submit" value="Submit" />
-
-          <button type="button" onclick="location.href='game.html'"> test </button>
-
-
+        <form id="setup-form" method="post" action="game_page.html">
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first_name" required /></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last_name" required /></label>
+            </fieldset>
+    
+            <legend>Number of players:</legend>
+            <label for="2-players"><input id="2-players" type="radio" name="playernumb" class="inline" value="2" checked />2</label>
+            <label for="3-players"><input id="3-players" type="radio" name="playernumb" class="inline" value="3" />3</label>
+            <label for="4-players"><input id="4-players" type="radio" name="playernumb" class="inline" value="4" />4</label>
+    
+            <input type="submit" value="Submit" />
         </form>
-
     </section>
 
- 
+    <script src="welcomepagejss.js"></script>
+
 
     </body>
