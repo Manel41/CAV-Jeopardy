@@ -127,6 +127,14 @@ function OnClick (element) {
 
     document.getElementById("overlay").style.display = "block";
 
+    // element.style.backgroundColor = "#ffeaea";
+    // element.style.color = "#ffc8c8";
+
+    // element.style.backgroundColor = "#ffeaea";
+    element.style.backgroundColor = "#c2185b";
+    element.style.color = "#000000"
+    element.style.opacity = "1";
+
     const object = questions[element.getAttribute('data-first') - 1][element.getAttribute('data-second')];
 
     let options = "<ol>";
@@ -140,7 +148,7 @@ function OnClick (element) {
     document.getElementById("overlay").innerHTML = `<h2> Question : ${object.question}</h2> ${options}`;
     
     element.setAttribute("data-clicked", true);
-    startTimer(5);
+    // startTimer(5);
 }
 
 // Timer function, the question dissappears after 5 seconds
