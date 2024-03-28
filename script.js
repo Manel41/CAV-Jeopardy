@@ -1,31 +1,31 @@
 const questions = [
         [ 
             {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
+                "question" : "The Terminator (1984)",
+                "choices" : ["Go ahead, make my day.", "'ll be back", "Why so serious?", "Nobody puts Baby in a corner."],
+                "correctAnswer" : 1,
+                "points" : 200
+            },
+
+            {
+                "question" : "Star Wars (1977)",
+                "choices" : ["To infinity and beyond!", "I'm king of the world!", "May the Force be with you.","There's no crying in baseball!"],
                 "correctAnswer" : 0,
                 "points" : 100
             },
 
             {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
+                "question" : "The Wizard of Oz (1939)",
+                "choices" : ["There's no place like home", "E.T phone home", "I'm gonna make him an offer he can't refuse", "Show me the money!"],
                 "correctAnswer" : 0,
-                "points" : 100
+                "points" : 300
             },
 
             {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
-
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
+                "question" : "Titanic (1997)",
+                "choices" : ["It's alive! It's alive!", "You talking to me?", "I'm the king of the world!", "I feel the need—the need for speed!"],
+                "correctAnswer" : 1,
+                "points" : 400
             },
 
         ],
