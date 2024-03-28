@@ -31,69 +31,76 @@ const questions = [
     ],
     [
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
+            "question" : "Fight club(1999)",
+            "choices" : ["Edward Norton", "Brad Pitt", "Matt Damon", "Leonardo DiCaprio"],
+            "correctAnswer" : 1,
+            "points" : 200
+        },
+
+        {
+            "question" : "The Dark Knight (2008)",
+            "choices" : ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Gary Oldman"],
             "correctAnswer" : 0,
+            "points" : 400
+        },
+
+        {
+            "question" : "Titanic (1997)",
+            "choices" : ["Brad Pitt", "Leonardo DiCaprio", "Johnny Depp", "Matt Damon"],
+            "correctAnswer" : 1,
             "points" : 100
         },
 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
+            "question" : "Inception (2010)",
+            "choices" : ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Tom Hardy", " Michael Caine"],
             "correctAnswer" : 0,
-            "points" : 100
-        },
-
-        {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
-        },
-
-        {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "points" : 300
         },
     ],
     [ 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
+            "question" : "A young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+            "choices" : ["The Lion King ", "Madagascar", "The Jungle Book", "Zootopia"],
             "correctAnswer" : 0,
             "points" : 100
         },
 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "question" : "In a dystopian future, 24 teenagers are forced to participate in a televised battle to the death. ",
+            "choices" : ["Divergent", "The Maze Runner", "Battle Royale", "The Hunger Games"],
+            "correctAnswer" : 3,
+            "points" : 400
         },
 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "question" : "A troubled mathematician discovers a mysterious numerical pattern in the Torah that provides keys to foreseeing global catastrophes. ",
+            "choices" : ["The Number 23", "Pi", "A Beautiful Mind", "Good Will Hunting"],
+            "correctAnswer" : 1,
+            "points" : 300
         },
 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "question" : "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers",
+            "choices" : ["Tron", "Ready Player One", "The Matrix", "Inception"],
+            "correctAnswer" : 2,
+            "points" : 200
         },
 
     ],
     [ 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "question" : "Jaws",
+            "choices" : ["1970", "1975", "1990", "2011"],
+            "correctAnswer" : 1,
+            "points" : 300
+        },
+
+        {
+            "question" : "La La Land",
+            "choices" : ["2014", "2021", "2016", "2002"],
+            "correctAnswer" : 2,
+            "points" : 400
         },
 
         {
@@ -104,17 +111,10 @@ const questions = [
         },
 
         {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
+            "question" : "Parasite",
+            "choices" : ["2019", "2015", "2023", "2021"],
             "correctAnswer" : 0,
-            "points" : 100
-        },
-
-        {
-            "question" : "i hate my life",
-            "choices" : ["kill", "me", "right", "now"],
-            "correctAnswer" : 0,
-            "points" : 100
+            "points" : 200
         },
 
     ],
