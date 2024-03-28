@@ -121,25 +121,42 @@ const questions = [
 ]
 
 function OnClick (element) {
-    if (element.getAttribute("data-clicked") === true) {
+    if (element.getAttribute("data-clicked") === "true") {
         return
     }
 
     document.getElementById("overlay").style.display = "block";
 
-    const object = questions[element.getAttribute('data-first')][element.getAttribute('data-second')]
+    const object = questions[element.getAttribute('data-first')][element.getAttribute('data-second')];
 
-    let options = "<ol>"
+    let options = "<ol>";
 
     for (let index = 0; index < 4; index++) {
-        options += `<li data-correct=${index === object.correctAnswer}>${object.choices[index]}</li>`
+        options += `<li data-correct=${index === object.correctAnswer} data-clicked=false onClick=OptionClicked(this)>${object.choices[index]}</li>`
     }
 
-    options += "</ol>"
+    options += "</ol>";
 
-    document.getElementById("overlay").innerHTML = `<h2> Question : ${object.question}</h2> ${options}`
+    document.getElementById("overlay").innerHTML = `<h2> Question : ${object.question}</h2> ${options}`;
     
-    element.setAttribute("data-clicked", true)
+    element.setAttribute("data-clicked", true);
+}
+
+function OptionClicked (element) {
+    if (element.getAttribute("data-clicked") === "true") {
+        return
+    }
+
+    element.setAttribute("data-clicked", true);
+
+    if (element.getAttribute("data-correct") == "false") {
+        element.style.color = '#ff0000';
+        return
+    }
+
+    document.getElementById("overlay").innerHTML = "";
+    document.getElementById("overlay").style.display = "none"; 
+
 }
 
 for (let index = 1; index <= 4; index++) {
