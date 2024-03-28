@@ -1,123 +1,123 @@
 const questions = [
-        [ 
-            {
-                "question" : "The Terminator (1984)",
-                "choices" : ["Go ahead, make my day.", "'ll be back", "Why so serious?", "Nobody puts Baby in a corner."],
-                "correctAnswer" : 1,
-                "points" : 200
-            },
+    [ 
+        {
+            "question" : "The Terminator (1984)",
+            "choices" : ["Go ahead, make my day.", "'ll be back", "Why so serious?", "Nobody puts Baby in a corner."],
+            "correctAnswer" : 1,
+            "points" : 200
+        },
 
-            {
-                "question" : "Star Wars (1977)",
-                "choices" : ["To infinity and beyond!", "I'm king of the world!", "May the Force be with you.","There's no crying in baseball!"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "Star Wars (1977)",
+            "choices" : ["To infinity and beyond!", "I'm king of the world!", "May the Force be with you.","There's no crying in baseball!"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "The Wizard of Oz (1939)",
-                "choices" : ["There's no place like home", "E.T phone home", "I'm gonna make him an offer he can't refuse", "Show me the money!"],
-                "correctAnswer" : 0,
-                "points" : 300
-            },
+        {
+            "question" : "The Wizard of Oz (1939)",
+            "choices" : ["There's no place like home", "E.T phone home", "I'm gonna make him an offer he can't refuse", "Show me the money!"],
+            "correctAnswer" : 0,
+            "points" : 300
+        },
 
-            {
-                "question" : "Titanic (1997)",
-                "choices" : ["It's alive! It's alive!", "You talking to me?", "I'm the king of the world!", "I feel the need—the need for speed!"],
-                "correctAnswer" : 2,
-                "points" : 400
-            },
+        {
+            "question" : "Titanic (1997)",
+            "choices" : ["It's alive! It's alive!", "You talking to me?", "I'm the king of the world!", "I feel the need—the need for speed!"],
+            "correctAnswer" : 2,
+            "points" : 400
+        },
 
-        ],
-        [
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+    ],
+    [
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
-        ],
-        [ 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
+    ],
+    [ 
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-        ],
-        [ 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+    ],
+    [ 
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-            {
-                "question" : "i hate my life",
-                "choices" : ["kill", "me", "right", "now"],
-                "correctAnswer" : 0,
-                "points" : 100
-            },
+        {
+            "question" : "i hate my life",
+            "choices" : ["kill", "me", "right", "now"],
+            "correctAnswer" : 0,
+            "points" : 100
+        },
 
-        ],
+    ],
 ]
 
 function OnClick (element) {
@@ -127,7 +127,7 @@ function OnClick (element) {
 
     document.getElementById("overlay").style.display = "block";
 
-    const object = questions[element.getAttribute('data-first')][element.getAttribute('data-second')];
+    const object = questions[element.getAttribute('data-first') - 1][element.getAttribute('data-second')];
 
     let options = "<ol>";
 
@@ -141,6 +141,12 @@ function OnClick (element) {
     
     element.setAttribute("data-clicked", true);
 }
+
+// Cette fonction est celle qui gere ce qui ce passe lorsqu'on click sur une des cellules.
+// Elle couvre la page avec un div puis affiche la question correspondante et les reponses possible. 
+
+
+
 
 function OptionClicked (element) {
     if (element.getAttribute("data-clicked") === "true") {
@@ -159,6 +165,12 @@ function OptionClicked (element) {
 
 }
 
+// Cette fonction gere lorsqu'une reponse est clickee.
+// Si c'est la bonne reponse, elle arrete de tout afficher
+// Sinon, elle change la couleur de la reponse clickee au rouge
+
+
+
 for (let index = 1; index <= 4; index++) {
     let string = "";
     let i = 0;
@@ -168,3 +180,5 @@ for (let index = 1; index <= 4; index++) {
     });
     document.getElementById(`${index}`).innerHTML = string;
 }
+
+// Cette boucle "for" cree le tableau qui liste les points de toutes les questions dans les categories
