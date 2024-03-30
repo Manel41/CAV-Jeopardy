@@ -10,49 +10,49 @@
     max-height: 80%; 
     padding: 20px; 
     background-color: rgba(244, 187, 228, 1); 
-    z-index: 999; /* Ensure it's above other content */
+    z-index: 999;
     color: #50243e; 
     font-family: Arial, sans-serif; 
     font-size: 40px; 
     text-align: center; 
-    overflow-y: auto; /*scroll bar*/}
+    overflow-y: auto; }
 
 
 
 body {
         font-family: Arial, sans-serif;
-        background-color: #dfbfcd; /* Dark background color */
-        color: #ffffff; /* White text color */
+        background-color: #dfbfcd;
+        color: #ffffff;
     }
     
 table {
-        width: 95%; /* Increase the width to 95% */
-        margin: 20px auto; /* Center the table */
+        width: 95%;
+        margin: 20px auto;
         border-collapse: collapse;
-        border: 10px solid #fff; /* White border with 10px thickness */
-        border-radius: 10px; /* Rounded corners */
+        border: 10px solid #fff;
+        border-radius: 10px;
         height: 550px;
     }
     
 th, td {
         padding: 15px;
         text-align: center;
-        border: 10px solid #fff; /* White border with 1px thickness */
+        border: 10px solid #fff;
         font-size: 40px;
     }
     
 th {
-        background-color: #f1b8cb; /* Pink background color for table headers */
-        border-bottom: 2px solid #fff; /* White border with 2px thickness for bottom */
-        font-size: 18px; /* Increase font size */
+        background-color: #f1b8cb;
+        border-bottom: 2px solid #fff;
+        font-size: 18px;
     }
     
 tr:nth-child(even) {
-        background-color: #eeb7cb; /* Darker pink background color for even rows */
+        background-color: #eeb7cb;
     }
     
 td:hover {
-        background-color: #c2185b; /* Darker pink background color on hover */
+        background-color: #c2185b;
         color: black;
         opacity: 0.5;
     }

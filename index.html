@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jepoardy Welcome page</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <p class="avgsmalltext">Watch M-F 7:00pm  on Nanalan-TV</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeopardy Welcome Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <a class="info-text" href="CAVFLIX/cavflix.html">Watch CAVpardy live! only on CAVFLIX</a>
         <h1>CAVpardy</h1>
-    <hr>
-    <section>
-        <h2 class="title">Meet the team:</h2>
+    </header>
 
-        <m1>
-            <person class="members">
-                <p class="names">Lionel</p>
-                <p class="description">james <br>charles fan
-                </p>
-            </person> 
-        </m1>
+    <main>
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <article class="member">
+                    <h3>Lionel</h3>
+                    <p>James Charles fan</p>
+                </article>
+                <article class="member">
+                    <h3>Manel</h3>
+                    <p>Multitalented legend</p>
+                </article>
+                <article class="member">
+                    <h3>Rob_rt</h3>
+                    <p>'I don't like the letter e'</p>
+                </article>
+            </div>
+        </section>
 
-        <m2>
-            <person class="members">
-                <p class="names">Manel</p>
-                <p class="description">multitalented <br>legend</p> 
-            </person> 
-        </m2>
+        <section class="rules-section">
+            <h2>Les règles</h2>
+            <p>
+                Il y aura 4 options de catégories: citations de films populaires, acteurs de films populaires, nom de films,
+                titres de films, et leur année d’apparition. Lorsque l’utilisateur choisit une catégorie pour le joueur,
+                il a le choix entre 4 questions, variant de très facile à très difficile. Si le joueur répond correctement à la question,
+                il peut s'entrainer sur une autre question, sinon, il continue jusqu'à ce qu'il obtient la réponse correcte.
+                Le joueur a 5 secondes pour répondre, avant que la question disparait. C'est un jeu d'entraînement permettant
+                au joueur d'étudier et d'apprendre d'avantage d'anecdotes sur le monde du cinéma.
+            </p>
+        </section>
 
-        <m3>
-            <person class="members">
-                <p class="names">Robert</p>
-                <p class="description">Nsjsjskkksjsj<br>shsjajsj</p>
-            </person> 
-        </m3>  
+        <section class="setup-section">
+            <h2>Set Up Your Party!</h2>
+            <p>Please fill out this form with the required information:</p>
+            <form id="setup-form">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input id="first-name" type="text" required />
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input id="last-name" type="text" required />
+                </div>
+                <fieldset>
+                    <legend>Number of Players:</legend>
+                    <label><input type="radio" name="playernumb" value="2" checked />2</label>
+                    <label><input type="radio" name="playernumb" value="3" />3</label>
+                    <label><input type="radio" name="playernumb" value="4" />4</label>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
-        <hr style ="margin-top:20px;">
-    </section>
-
-
-    <section>
-        <h3 class="title">Les règles : </h3>
-        <ol>
-            <li><p> Il y aura 4 options de catégories : citations de films populaires, acteurs de films populaires, nom de films,<br>
-                 titres de films, et leur année d’apparition. Lorsque l’utilisateur choisit une catégorie pour le joueur,  <br>
-                il a le choix entre 4 questions, variant de très facile à très difficile.Si le joueur répond correctement à la question,<br>
-                il peut s'entrainer sur une autre question, sinon, il continue jusqu'a ce qu'il obtient la réponse correcte. Le joueur a 5secondes <br>
-                pour répondre, avant que la question disparait. C'est un jeu d'entrainement permettant au joueur d'étudier et d'apprendre d'avantage<br>
-                d'anecdotes sur le monde du cinéma. 
-                  </p></li>
-
-        </ol>
-        <hr>
-    </section>
-    <section>
-        <h4 class="title">Set up your party!</h4>
-        <p>Please fill out this form with the required information</p>
-        <form id="setup-form" method="post" action="game_page.html">
-            <fieldset>
-                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first_name" required /></label>
-                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last_name" required /></label>
-            </fieldset>
-    
-            <legend>Number of players:</legend>
-            <label for="2-players"><input id="2-players" type="radio" name="playernumb" class="inline" value="2" checked />2</label>
-            <label for="3-players"><input id="3-players" type="radio" name="playernumb" class="inline" value="3" />3</label>
-            <label for="4-players"><input id="4-players" type="radio" name="playernumb" class="inline" value="4" />4</label>
-    
-            <input type="submit" value="Submit" />
-        </form>
-    </section>
+        <!-- Zen Mode Section -->
+        <section class="zen-mode-section">
+            <h2>Zen Mode</h2>
+            <p>Want a more relaxed experience? Try Zen Mode!</p>
+            <a href="zenmode.html" class="zen-mode-button">Play Zen Mode</a>
+        </section>
+    </main>
 
     <script src="welcomepage.js"></script>
-
-
-    </body>
+</body>
+</html>

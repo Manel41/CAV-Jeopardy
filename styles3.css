@@ -36,8 +36,9 @@ body {
 }
 
 .category-title {
-    font-size: 20px;
+    font-size: 40px;
     color: white;
+    font-weight: bold;
 }
 
 /* overlay qui montre les questions/reponses */
