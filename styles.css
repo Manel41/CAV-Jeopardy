@@ -32,7 +32,7 @@ hr{
 }
 
 h3{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .members{
@@ -73,13 +73,10 @@ h3{
 }
 
 
-h3{
-    margin-top: 50px;
-}
-
 
 .p{
     max-width: 300px;
+    disp
 }
 
 ol{
@@ -113,4 +110,11 @@ h4{
 form{
     margin-right: 50px;
 }
+
+
+h5{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
 
