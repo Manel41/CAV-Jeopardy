@@ -213,7 +213,6 @@ for (let columnIndex = 0; columnIndex < 4; columnIndex++) {
     tableHTML += "</tr>";
 }
 
-// Assuming you have a table element with id="myTable"
 document.getElementById("questions place").innerHTML += tableHTML;
 
 // Cette boucle "for" cree le tableau qui liste les points de toutes les questions dans les cate
