@@ -1,3 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+const playerNumber = Number(urlParams.get("num_players"));
+
 const questions = [
     [ 
         {
@@ -120,6 +123,8 @@ const questions = [
     ],
 ]
 
+let playerTurn = 0;
+
 function OnClick (element) {
     if (element.getAttribute("data-clicked") === "true") {
         return;
@@ -140,7 +145,7 @@ function OnClick (element) {
     let options = "<ol>";
 
     for (let index = 0; index < 4; index++) {
-        options += `<li data-correct=${index === object.correctAnswer} data-clicked=false onClick=OptionClicked(this)>${object.choices[index]}</li>`
+        options += `<li data-correct=${index === object.correctAnswer} data-clicked=false data-points=${object.points} onClick=OptionClicked(this)>${object.choices[index]}</li>`
     }
 
     options += "</ol>";
@@ -184,9 +189,13 @@ function OptionClicked(element) {
 
     if (element.getAttribute("data-correct") == "false") {
         element.style.color = '#ff0000';
+        playerTurn++;
+        playerTurn %= playerNumber;
         return;
     }
 
+    let playerPoints = document.getElementById(`1${playerTurn}`).innerHTML;
+    document.getElementById(`1${playerTurn}`).innerHTML = `${Number(playerPoints) + Number(element.getAttribute("data-points"))}`
     // Correct answer clicked
     document.getElementById("overlay").innerHTML = "<h2>Correct Answer!</h2>"; // Display message
 
@@ -216,3 +225,8 @@ for (let columnIndex = 0; columnIndex < 4; columnIndex++) {
 document.getElementById("questions place").innerHTML += tableHTML;
 
 // Cette boucle "for" cree le tableau qui liste les points de toutes les questions dans les cate
+
+
+for (let player = 0; player < playerNumber; player++) {
+    document.getElementById("players").innerHTML += `<td id="1${player}">0</td>`
+}
