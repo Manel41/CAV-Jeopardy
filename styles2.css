@@ -51,9 +51,10 @@ tr:nth-child(even) {
         background-color: #eeb7cb;
     }
     
-tr:hover {
+td:hover {
         background-color: #c2185b; /* Darker pink background color on hover */
         color: black;
+        opacity: 0.5;
     }
 
 
