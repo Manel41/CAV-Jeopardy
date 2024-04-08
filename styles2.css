@@ -51,31 +51,31 @@ tr:nth-child(even) {
         background-color: #eeb7cb;
     }
     
-td:hover {
+table:first-of-type tr td:hover {
         background-color: #c2185b; /* Darker pink background color on hover */
         color: black;
         opacity: 0.5;
-    }
+}
 
 
-    #scoreboard {
-        border-collapse: collapse;
-        width: 60%; 
-        margin: auto; 
-        height: 300px;
-    }
-    
-    #scoreboard th,
-    #scoreboard td {
-        border: 10px solid #eec6d0;
-        padding: 5px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        background-color: #b53b70; 
-        color: #f0e4e6; 
-    }
-    
-    
-    #scoreboard td {
-        font-size: 100px; 
-    }
+#scoreboard {
+    border-collapse: collapse;
+    width: 60%; 
+    margin: auto; 
+    height: 300px;
+}
+
+#scoreboard th,
+#scoreboard td {
+    border: 10px solid #eec6d0;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #b53b70; 
+    color: #f0e4e6; 
+}
+
+
+#scoreboard td {
+    font-size: 100px; 
+}
